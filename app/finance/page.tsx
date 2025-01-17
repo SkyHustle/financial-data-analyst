@@ -111,7 +111,7 @@ const SafeChartRenderer: React.FC<{ data: ChartData }> = ({ data }) => {
 };
 
 const MessageComponent: React.FC<MessageComponentProps> = ({ message }) => {
-  console.log("Message with chart data:", message); // Add this line for debugging
+  // console.log("Message with chart data:", message); // Add this line for debugging
   return (
     <div className="flex items-start gap-2">
       {message.role === "assistant" && (
@@ -198,7 +198,7 @@ export default function AIChat() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [selectedModel, setSelectedModel] = useState(
-    "claude-3-5-sonnet-20240620",
+    "claude-3-5-sonnet-20240620"
   );
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chartEndRef = useRef<HTMLDivElement>(null);
@@ -707,7 +707,7 @@ export default function AIChat() {
                       >
                         <SafeChartRenderer data={message.chartData} />
                       </div>
-                    ),
+                    )
                 )}
               </div>
             ) : (
