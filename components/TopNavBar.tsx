@@ -41,6 +41,7 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ features = {} }) => {
           alt="Company Wordmark"
           width={112}
           height={20}
+          style={{ height: "auto" }}
         />
       </div>
       <div className="flex items-center gap-2">
